@@ -17,3 +17,11 @@ def assign_rooms(array)
   
   new_array
 end
+
+def pritner(attendees)
+  badges = batch_badge_creator(attendees)
+  room_assignements = assign_rooms(attendees)
+  
+  badges.each {|ele| puts ele}
+  room_assignements.each {|ele| puts ele}
+end
